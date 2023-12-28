@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('https://i.pinimg.com/736x/ab/f2/24/abf224e8feadf3fb5115594c07e14617.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0); /* Transparência 0% */
+      color: white; /* Cor do texto em branco */
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .col-sm-4 {
+      width: calc(33.333% - 20px);
+      margin: 10px;
+      box-sizing: border-box;
+    }
+
+    .label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .input,
+    .select,
+    .annotation textarea {
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .annotation textarea {
+      height: 90px;
+    }
+
+    .button {
+      width: 100px;
+      height: 40px;
+      border: none;
+      background-color: #0078d4;
+      color: white;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #005a9e;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .col-sm-4 {
+        width: 100%;
+        margin: 5px;
+      }
+
+      .annotation textarea {
+        height: 60px;
+      }
+
+      .buttons {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Formulário</div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="label">Nome:</div>
+        <input type="text" class="input" placeholder="Informe seu nome">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">CPF:</div>
+        <input type="text" class="input" placeholder="Informe seu CPF">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">CEP:</div>
+        <input type="text" class="input" placeholder="Informe seu CEP">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">E-mail:</div>
+        <input type="text" class="input" placeholder="Informe seu e-mail">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="label">Telefone:</div>
+        <input type="text" class="input" placeholder="Informe seu telefone">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">Data de Nascimento:</div>
+        <input type="date" class="input" placeholder="Informe sua data de nascimento">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">Endereço:</div>
+        <input type="text" class="input" placeholder="Informe seu endereço">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">Sexo:</div>
+        <select class="select">
+          <option value="" selected>Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="label">Observações:</div>
+        <textarea class="input" rows="3" placeholder="Digite suas observações"></textarea>
+      </div>
+      <div class="col-sm-4">
+        <div class="label">Outro Campo:</div>
+        <input type="text" class="input">
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="button" onclick="clearForm()">Limpar</button>
+      <button class="button" onclick="sendForm()">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    function clearForm() {
+      // TODO: implement the logic to clear the form fields
+    }
+
+    function sendForm() {
+      // TODO: implement the logic to send the form data to a server
+    }
+  </script>
+</body>
+
+</html>
