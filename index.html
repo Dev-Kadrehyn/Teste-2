@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <script defer src="./main.js"></script>
   <title>Formulário Responsivo</title>
 </head>
-
 <body>
+  <div class="logo-container">
+    <img src="https://i.pinimg.com/736x/23/0a/03/230a033bd2cb29eb493287ed1ceb7402.jpg" alt="Logo" class="logo">
+  </div>
   <div class="container">
     <div class="title">Formulário</div>
     <div class="row">
       <div class="col-sm-4">
-        <div class="label">Nome:</div>
+        <div class="label">COD. CLIENTE:</div>
+        <input type="text" class="input" placeholder="Informe seu código de cliente">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">NOME:</div>
         <input type="text" class="input" placeholder="Informe seu nome">
       </div>
       <div class="col-sm-4">
-        <div class="label">CPF:</div>
-        <input type="text" class="input" placeholder="Informe seu CPF">
+        <div class="label">DATA DE CADASTRO:</div>
+        <input type="date" class="input" placeholder="Informe sua data de cadastro">
       </div>
       <div class="col-sm-4">
-        <div class="label">CEP:</div>
-        <input type="text" class="input" placeholder="Informe seu CEP">
+        <div class="label">CPF/CNPJ:</div>
+        <input type="text" class="input" placeholder="Informe seu CPF/CNPJ">
       </div>
       <div class="col-sm-4">
-        <div class="label">E-mail:</div>
-        <input type="text" class="input" placeholder="Informe seu e-mail">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="label">Telefone:</div>
-        <input type="text" class="input" placeholder="Informe seu telefone">
-      </div>
-      <div class="col-sm-4">
-        <div class="label">Data de Nascimento:</div>
-        <input type="date" class="input" placeholder="Informe sua data de nascimento">
-      </div>
-      <div class="col-sm-4">
-        <div class="label">Endereço:</div>
+        <div class="label">ENDERECO:</div>
         <input type="text" class="input" placeholder="Informe seu endereço">
       </div>
       <div class="col-sm-4">
-        <div class="label">Sexo:</div>
-        <select class="select">
-          <option value="" selected>Selecione</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Feminino">Feminino</option>
-        </select>
+        <div class="label">FONE:</div>
+        <input type="text" class="input" placeholder="Informe seu telefone">
       </div>
-    </div>
-    <div class="row">
       <div class="col-sm-4">
-        <div class="label">Observações:</div>
-        <textarea class="input" rows="3" placeholder="Digite suas observações"></textarea>
+        <div class="label">END COMERCIAL:</div>
+        <input type="text" class="input" placeholder="Informe seu endereço comercial">
+      </div>
+      <div class="col-sm-4">
+        <div class="label">FONE COMERCIAL:</div>
+        <input type="text" class="input" placeholder="Informe seu telefone comercial">
+      </div>
+      <div class="col-sm-8">
+        <div class="label">ANOTAÇÕES:</div>
+        <textarea class="input" rows="5" placeholder="Digite suas anotações"></textarea>
       </div>
       <div class="col-sm-4">
         <div class="label">Outro Campo:</div>
@@ -68,5 +62,4 @@
     </div>
   </div>
 </body>
-
 </html>

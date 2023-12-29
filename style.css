@@ -9,14 +9,54 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input,
+.select,
+.annotation textarea {
+  font-size: 16px;
+}
+
+.button {
+  font-size: 16px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+@media (min-width: 601px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0); /* Transparência 0% */
-  color: white; /* Cor do texto em branco */
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -40,12 +80,6 @@ body {
   box-sizing: border-box;
 }
 
-.label {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .input,
 .select,
 .annotation textarea {
@@ -66,7 +100,6 @@ body {
   border: none;
   background-color: #0078d4;
   color: white;
-  font-size: 16px;
   margin: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -87,12 +120,9 @@ body {
     background-image: url('https://i.pinimg.com/236x/f7/2e/8e/f72e8e3a9ba32067d3893a521e99a9c1.jpg');
   }
 
-  /* Estilos adicionais para dispositivos móveis, se necessário */
   .col-sm-4 {
-    /* Exemplo de ajuste específico para dispositivos móveis */
-    margin: 10px 0; /* Ajuste da margem para melhor visualização em dispositivos móveis */
+    margin: 10px 0;
   }
-}
 
   .annotation textarea {
     height: 60px;
@@ -101,4 +131,22 @@ body {
   .buttons {
     margin-top: 30px;
   }
+}
+/* O restante do seu código CSS permanece inalterado */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* Adicionado para alinhar os itens no topo */
+}
+
+.col-sm-8 {
+  width: calc(66.666% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.annotation textarea {
+  height: 150px;
 }
